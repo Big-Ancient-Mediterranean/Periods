@@ -1,0 +1,820 @@
+{
+  "@context": {
+    "@base": "http://n2t.net/ark:/99152/",
+    "PeriodCollection": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "PeriodDefinition": "http://www.w3.org/2004/02/skos/core#Concept",
+    "abstract": "http://purl.org/dc/terms/abstract",
+    "collection": {
+      "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type": "@id"
+    },
+    "contributors": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/contributor"
+    },
+    "creators": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/creator"
+    },
+    "dateAccessed": {
+      "@id": "http://purl.org/dc/terms/date",
+      "@type": "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "definitions": {
+      "@container": "@index",
+      "@reverse": "http://www.w3.org/2004/02/skos/core#inScheme"
+    },
+    "earliestYear": {
+      "@id": "periodo:earliestYear",
+      "@type": "http://www.w3.org/2001/XMLSchema#gYear"
+    },
+    "editorialNote": "http://www.w3.org/2004/02/skos/core#editorialNote",
+    "id": "@id",
+    "in": "http://www.w3.org/2006/time#hasDateTimeDescription",
+    "inDataset": {
+      "@id": "http://rdfs.org/ns/void#inDataset",
+      "@type": "@id"
+    },
+    "label": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "language": "http://purl.org/dc/terms/language",
+    "latestYear": {
+      "@id": "periodo:latestYear",
+      "@type": "http://www.w3.org/2001/XMLSchema#gYear"
+    },
+    "localizedLabels": {
+      "@container": "@language",
+      "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "locator": "http://purl.org/ontology/bibo/locator",
+    "name": "http://xmlns.com/foaf/0.1/name",
+    "note": "http://www.w3.org/2004/02/skos/core#note",
+    "partOf": {
+      "@id": "http://purl.org/dc/terms/isPartOf",
+      "@type": "@id"
+    },
+    "periodCollections": {
+      "@container": "@index",
+      "@id": "http://www.w3.org/2000/01/rdf-schema#member"
+    },
+    "periodo": "http://n2t.net/ark:/99152/p0v#",
+    "primaryTopicOf": {
+      "@id": "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
+      "@type": "@id"
+    },
+    "sameAs": {
+      "@id": "http://www.w3.org/2002/07/owl#sameAs",
+      "@type": "@id"
+    },
+    "source": "http://purl.org/dc/terms/source",
+    "spatialCoverage": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/spatial"
+    },
+    "spatialCoverageDescription": "periodo:spatialCoverageDescription",
+    "start": "http://www.w3.org/2006/time#intervalStartedBy",
+    "stop": "http://www.w3.org/2006/time#intervalFinishedBy",
+    "title": "http://purl.org/dc/terms/title",
+    "type": "@type",
+    "url": {
+      "@id": "http://xmlns.com/foaf/0.1/page",
+      "@type": "@id"
+    },
+    "year": {
+      "@id": "http://www.w3.org/2006/time#year",
+      "@type": "http://www.w3.org/2001/XMLSchema#gYear"
+    },
+    "yearPublished": {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": "http://www.w3.org/2001/XMLSchema#gYear"
+    }
+  },
+  "periodCollections": {
+    "https://test.perio.do/.well-known/genid/9d135f21dee0fb7c0a27a2bdb9207e87": {
+      "definitions": {
+        "https://test.perio.do/.well-known/genid/057b91f9753e2c89ea1474113b212e55": {
+          "id": "https://test.perio.do/.well-known/genid/057b91f9753e2c89ea1474113b212e55",
+          "label": "3rd Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "3rd Century CE"
+            ]
+          },
+          "note": "The 3rd Century CE as defined by https://en.wikipedia.org/wiki/3rd_century",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "0201"
+            },
+            "label": "201"
+          },
+          "stop": {
+            "in": {
+              "year": "0300"
+            },
+            "label": "300"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/3rd_century"
+        },
+        "https://test.perio.do/.well-known/genid/09345904c7315033e3f48ce472db8fa4": {
+          "id": "https://test.perio.do/.well-known/genid/09345904c7315033e3f48ce472db8fa4",
+          "label": "5th Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "5th Century CE"
+            ]
+          },
+          "note": "5th Century CE as defined by https://en.wikipedia.org/wiki/5th_century",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "0401"
+            },
+            "label": "401"
+          },
+          "stop": {
+            "in": {
+              "year": "0500"
+            },
+            "label": "500"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/5th_century"
+        },
+        "https://test.perio.do/.well-known/genid/262b1b0318ae437eeb8e166d3f125e79": {
+          "id": "https://test.perio.do/.well-known/genid/262b1b0318ae437eeb8e166d3f125e79",
+          "label": "19th Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "19th Century CE"
+            ]
+          },
+          "note": "The 19th Century CE as defined by https://en.wikipedia.org/wiki/19th_century",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "1801"
+            },
+            "label": "1801"
+          },
+          "stop": {
+            "in": {
+              "year": "1900"
+            },
+            "label": "1900"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/19th_century"
+        },
+        "https://test.perio.do/.well-known/genid/36c0ba6df5b9020d4ed0dac8f5068408": {
+          "id": "https://test.perio.do/.well-known/genid/36c0ba6df5b9020d4ed0dac8f5068408",
+          "label": "17th Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "17th Century CE"
+            ]
+          },
+          "note": "The 17th Century CE as defined by https://en.wikipedia.org/wiki/17th_century",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "1601"
+            },
+            "label": "1601"
+          },
+          "stop": {
+            "in": {
+              "year": "1700"
+            },
+            "label": "1700"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/17th_century"
+        },
+        "https://test.perio.do/.well-known/genid/459e2462ba3e9e05677607d30d956864": {
+          "id": "https://test.perio.do/.well-known/genid/459e2462ba3e9e05677607d30d956864",
+          "label": "8th Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "8th Century CE"
+            ]
+          },
+          "note": "The 8th Century CE as defined by https://en.wikipedia.org/wiki/8th_century",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "0701"
+            },
+            "label": "701"
+          },
+          "stop": {
+            "in": {
+              "year": "0800"
+            },
+            "label": "800"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/8th_century"
+        },
+        "https://test.perio.do/.well-known/genid/5ad64ddbe5160faa5d536db4f83c8812": {
+          "id": "https://test.perio.do/.well-known/genid/5ad64ddbe5160faa5d536db4f83c8812",
+          "label": "6th Century BCE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "6th Century BCE"
+            ]
+          },
+          "note": "The 6th Century BCE as defined by https://en.wikipedia.org/wiki/6th_century_BC",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "-0600"
+            },
+            "label": "-600"
+          },
+          "stop": {
+            "in": {
+              "year": "-0501"
+            },
+            "label": "-501"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/6th_century_BC"
+        },
+        "https://test.perio.do/.well-known/genid/6af5aa0087790f54ba2303339d17dfef": {
+          "id": "https://test.perio.do/.well-known/genid/6af5aa0087790f54ba2303339d17dfef",
+          "label": "3rd Century BCE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "3rd Century BCE"
+            ]
+          },
+          "note": "The 3rd Century BCE as defined at https://en.wikipedia.org/wiki/3rd_century_BC",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "-0300"
+            },
+            "label": "-300"
+          },
+          "stop": {
+            "in": {
+              "year": "-0201"
+            },
+            "label": "-201"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/3rd_century_BC"
+        },
+        "https://test.perio.do/.well-known/genid/7650b0225e90da47c225a9fc0e94cabb": {
+          "id": "https://test.perio.do/.well-known/genid/7650b0225e90da47c225a9fc0e94cabb",
+          "label": "5th Century BCE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "5th Century BCE"
+            ]
+          },
+          "note": "5th Century BCE as defined at https://en.wikipedia.org/wiki/5th_century_BC",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "-0500"
+            },
+            "label": "-500"
+          },
+          "stop": {
+            "in": {
+              "year": "-0401"
+            },
+            "label": "-401"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/5th_century_BC"
+        },
+        "https://test.perio.do/.well-known/genid/76a15901fc4e9cc634a48f0760ac2acc": {
+          "id": "https://test.perio.do/.well-known/genid/76a15901fc4e9cc634a48f0760ac2acc",
+          "label": "12th Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "12th Century CE"
+            ]
+          },
+          "note": "The 12th Century CE as defined at https://en.wikipedia.org/wiki/12th_century",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "1101"
+            },
+            "label": "1101"
+          },
+          "stop": {
+            "in": {
+              "year": "1200"
+            },
+            "label": "1200"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/12th_century"
+        },
+        "https://test.perio.do/.well-known/genid/77e8346d18c7dfdc45590ff67b2d97b4": {
+          "id": "https://test.perio.do/.well-known/genid/77e8346d18c7dfdc45590ff67b2d97b4",
+          "label": "11th Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "11th Century CE"
+            ]
+          },
+          "note": "The 11th Century CE as defined at https://en.wikipedia.org/wiki/11th_century",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "1001"
+            },
+            "label": "1001"
+          },
+          "stop": {
+            "in": {
+              "year": "1100"
+            },
+            "label": "1100"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/11th_century"
+        },
+        "https://test.perio.do/.well-known/genid/79011f0dfccea9d4f0ea4c67e6142861": {
+          "id": "https://test.perio.do/.well-known/genid/79011f0dfccea9d4f0ea4c67e6142861",
+          "label": "15th Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "15th Century CE"
+            ]
+          },
+          "note": "The 15th Century CE as defined by https://en.wikipedia.org/wiki/15th_century",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "1401"
+            },
+            "label": "1401"
+          },
+          "stop": {
+            "in": {
+              "year": "1500"
+            },
+            "label": "1500"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/15th_century"
+        },
+        "https://test.perio.do/.well-known/genid/828bc1291ce4dd21df0cba4a849161f1": {
+          "id": "https://test.perio.do/.well-known/genid/828bc1291ce4dd21df0cba4a849161f1",
+          "label": "6th Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "6th Century CE"
+            ]
+          },
+          "note": "The 6th Century CE as defined by https://en.wikipedia.org/wiki/6th_century",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "0501"
+            },
+            "label": "501"
+          },
+          "stop": {
+            "in": {
+              "year": "0600"
+            },
+            "label": "600"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/6th_century"
+        },
+        "https://test.perio.do/.well-known/genid/91f40b098164d62fcfc6024131aaaca1": {
+          "id": "https://test.perio.do/.well-known/genid/91f40b098164d62fcfc6024131aaaca1",
+          "label": "21st Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "21st Century CE"
+            ]
+          },
+          "note": "The 21st Century CE as defined by https://en.wikipedia.org/wiki/21st_century",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "2001"
+            },
+            "label": "2001"
+          },
+          "stop": {
+            "in": {
+              "year": "2100"
+            },
+            "label": "2100"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/21st_century"
+        },
+        "https://test.perio.do/.well-known/genid/965b07082e3deb11ae781768e3ad0e25": {
+          "id": "https://test.perio.do/.well-known/genid/965b07082e3deb11ae781768e3ad0e25",
+          "label": "4th Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "4th Century CE"
+            ]
+          },
+          "note": "The 4th Century CE as defined by https://en.wikipedia.org/wiki/4th_century",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "0301"
+            },
+            "label": "301"
+          },
+          "stop": {
+            "in": {
+              "year": "0400"
+            },
+            "label": "400"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/4th_century"
+        },
+        "https://test.perio.do/.well-known/genid/99fae4c2f49866abc9cbead504b38b74": {
+          "id": "https://test.perio.do/.well-known/genid/99fae4c2f49866abc9cbead504b38b74",
+          "label": "2nd Century BCE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "2nd Century BCE"
+            ]
+          },
+          "note": "2nd Century BCE as defined at https://en.wikipedia.org/wiki/2nd_century_BC",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "-0200"
+            },
+            "label": "-200"
+          },
+          "stop": {
+            "in": {
+              "year": "-0101"
+            },
+            "label": "-101"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/2nd_century_BC"
+        },
+        "https://test.perio.do/.well-known/genid/9c2cdbfb96ef15483347e0f0ab56a20c": {
+          "id": "https://test.perio.do/.well-known/genid/9c2cdbfb96ef15483347e0f0ab56a20c",
+          "label": "14th Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "14th Century CE"
+            ]
+          },
+          "note": "The 14th Century CE as defined by https://en.wikipedia.org/wiki/14th_century",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "1301"
+            },
+            "label": "1301"
+          },
+          "stop": {
+            "in": {
+              "year": "1400"
+            },
+            "label": "1400"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/14th_century"
+        },
+        "https://test.perio.do/.well-known/genid/af35ab7ce330275249d3e6fdf71bac89": {
+          "id": "https://test.perio.do/.well-known/genid/af35ab7ce330275249d3e6fdf71bac89",
+          "label": "13th Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "13th Century CE"
+            ]
+          },
+          "note": "The 13th Century CE as defined at https://en.wikipedia.org/wiki/13th_century",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "1201"
+            },
+            "label": "1201"
+          },
+          "stop": {
+            "in": {
+              "year": "1300"
+            },
+            "label": "1300"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/13th_century"
+        },
+        "https://test.perio.do/.well-known/genid/c0ddedcbf5b07c6c7b443df3802b2b7e": {
+          "id": "https://test.perio.do/.well-known/genid/c0ddedcbf5b07c6c7b443df3802b2b7e",
+          "label": "7th Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "7th Century CE"
+            ]
+          },
+          "note": "The 7th Century CE as defined by https://en.wikipedia.org/wiki/7th_century",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "0601"
+            },
+            "label": "601"
+          },
+          "stop": {
+            "in": {
+              "year": "0700"
+            },
+            "label": "700"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/7th_century"
+        },
+        "https://test.perio.do/.well-known/genid/c13a3beae9ec0f6f6a88318eff30837e": {
+          "id": "https://test.perio.do/.well-known/genid/c13a3beae9ec0f6f6a88318eff30837e",
+          "label": "20th Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "20th Century CE"
+            ]
+          },
+          "note": "The 20th Century CE as defined by https://en.wikipedia.org/wiki/20th_century",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "1901"
+            },
+            "label": "1901"
+          },
+          "stop": {
+            "in": {
+              "year": "2000"
+            },
+            "label": "2000"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/20th_century"
+        },
+        "https://test.perio.do/.well-known/genid/d719082f1bcf6b83095dddcc809269ed": {
+          "id": "https://test.perio.do/.well-known/genid/d719082f1bcf6b83095dddcc809269ed",
+          "label": "10th Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "10th Century CE"
+            ]
+          },
+          "note": "The 10th Century CE as defined at https://en.wikipedia.org/wiki/10th_century",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "0901"
+            },
+            "label": "901"
+          },
+          "stop": {
+            "in": {
+              "year": "1000"
+            },
+            "label": "1000"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/10th_century"
+        },
+        "https://test.perio.do/.well-known/genid/dce2a5e93b4da8a995f450eed0c54381": {
+          "editorialNote": "Slight change from wikipedia's information as it is potentially misleading",
+          "id": "https://test.perio.do/.well-known/genid/dce2a5e93b4da8a995f450eed0c54381",
+          "label": "18th Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "18th Century CE"
+            ]
+          },
+          "note": "The 18th Century CE as defined by https://en.wikipedia.org/wiki/18th_century",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "1701"
+            },
+            "label": "1701"
+          },
+          "stop": {
+            "in": {
+              "year": "1800"
+            },
+            "label": "1800"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/18th_century"
+        },
+        "https://test.perio.do/.well-known/genid/df4f96ce5e1594f7f20c318707d9ff2c": {
+          "id": "https://test.perio.do/.well-known/genid/df4f96ce5e1594f7f20c318707d9ff2c",
+          "label": "4th Century BCE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "4th Century BCE"
+            ]
+          },
+          "note": "4th Century BCE as defined at https://en.wikipedia.org/wiki/4th_century_BC",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "-0400"
+            },
+            "label": "-400"
+          },
+          "stop": {
+            "in": {
+              "year": "-0301"
+            },
+            "label": "-301"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/4th_century_BC"
+        },
+        "https://test.perio.do/.well-known/genid/e1311efa923ae17707b15f037c25f9b1": {
+          "id": "https://test.perio.do/.well-known/genid/e1311efa923ae17707b15f037c25f9b1",
+          "label": "16th Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "16th Century CE"
+            ]
+          },
+          "note": "The 16th Century CE as defined by https://en.wikipedia.org/wiki/16th_century",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "1501"
+            },
+            "label": "1501"
+          },
+          "stop": {
+            "in": {
+              "year": "1600"
+            },
+            "label": "1600"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/16th_century"
+        },
+        "https://test.perio.do/.well-known/genid/e91c2092402af11d6ee2a0d9e22d15b4": {
+          "id": "https://test.perio.do/.well-known/genid/e91c2092402af11d6ee2a0d9e22d15b4",
+          "label": "2nd Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "2nd Century CE"
+            ]
+          },
+          "note": "The 2nd Century CE as defined at https://en.wikipedia.org/wiki/2nd_century\n",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "0101"
+            },
+            "label": "101"
+          },
+          "stop": {
+            "in": {
+              "year": "0200"
+            },
+            "label": "200"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/2nd_century"
+        },
+        "https://test.perio.do/.well-known/genid/f2260485bcd0581c3974a27c160c6c25": {
+          "id": "https://test.perio.do/.well-known/genid/f2260485bcd0581c3974a27c160c6c25",
+          "label": "1st Century BCE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "1st Century BCE"
+            ]
+          },
+          "note": "The 1st Century BCE as defined at https://en.wikipedia.org/wiki/1st_century_BC",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "-0100"
+            },
+            "label": "-100"
+          },
+          "stop": {
+            "in": {
+              "year": "-0001"
+            },
+            "label": "-1"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/1st_century_BC"
+        },
+        "https://test.perio.do/.well-known/genid/faf4d1d6c25cde8af351c31e1b2327ee": {
+          "id": "https://test.perio.do/.well-known/genid/faf4d1d6c25cde8af351c31e1b2327ee",
+          "label": "1st Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "1st Century CE"
+            ]
+          },
+          "note": "The 1st Century CE as defined at https://en.wikipedia.org/wiki/1st_century",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "0001"
+            },
+            "label": "1"
+          },
+          "stop": {
+            "in": {
+              "year": "0100"
+            },
+            "label": "100"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/1st_century"
+        },
+        "https://test.perio.do/.well-known/genid/fd9ba14eea0f75a8868b2e950b450d2b": {
+          "id": "https://test.perio.do/.well-known/genid/fd9ba14eea0f75a8868b2e950b450d2b",
+          "label": "9th Century CE",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "9th Century CE"
+            ]
+          },
+          "note": "The 9th Century CE as defined by https://en.wikipedia.org/wiki/9th_century",
+          "spatialCoverageDescription": "Global",
+          "start": {
+            "in": {
+              "year": "0801"
+            },
+            "label": "801"
+          },
+          "stop": {
+            "in": {
+              "year": "0900"
+            },
+            "label": "900"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://en.wikipedia.org/wiki/9th_century"
+        }
+      },
+      "editorialNote": "This period collection is mostly \"generic\" time frames, as commonly defined and described by Wikipedia (https://www.wikipedia.org/). As BAM expands its coverage, more periods will be added from our data set.",
+      "id": "https://test.perio.do/.well-known/genid/9d135f21dee0fb7c0a27a2bdb9207e87",
+      "source": {
+        "citation": "2016. Horne, Ryan, Sarah Bond, and Paul Diley. Big Ancient Mediterranean Project (https://www.lib.uiowa.edu/bam/)",
+        "contributors": [
+          {
+            "name": ""
+          }
+        ],
+        "creators": [
+          {
+            "name": "Ryan Horne"
+          }
+        ],
+        "title": "BAM_Periods",
+        "url": "https://github.com/Big-Ancient-Mediterranean/Periods",
+        "yearPublished": "2016"
+      },
+      "type": "PeriodCollection"
+    }
+  },
+  "type": "rdf:Bag"
+}
